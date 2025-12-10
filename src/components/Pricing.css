@@ -1,0 +1,153 @@
+.section-pricing {
+  width: 100%;
+  background: #ffffff;
+  padding: 4rem 0 5rem;
+}
+
+.pricing-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #000000;
+}
+
+.pricing-description {
+  color: #444;
+  margin-bottom: 2rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-cta {
+  margin-bottom: 2.5rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: left;
+}
+
+.pricing-card {
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-header {
+  padding: 1.3rem 1.5rem 1rem;
+  background: #ffffff;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.pricing-name {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.pricing-tagline {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.25rem;
+}
+
+.pricing-price-band {
+  background: var(--accent-gold-gradient);
+  padding: 1.3rem 1.5rem;
+  color: #ffffff;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing-start {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+  line-height: 1.1;
+  opacity: 0.9;
+}
+
+.pricing-amount {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.pricing-amount-period {
+  font-size: 0.9rem;
+  margin-left: 0.25rem;
+}
+
+.pricing-subcopy {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.pricing-body {
+  padding: 1.5rem 1.5rem 1.8rem;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-features li:first-child {
+  font-weight: 700;
+  margin-bottom: 6px;
+  padding-left: 0;
+}
+
+.pricing-features li:first-child::before {
+  content: none !important;
+}
+
+.pricing-features li {
+  position: relative;
+  padding: 0.35rem 0 0.35rem 1.4rem;
+  font-size: 0.95rem;
+}
+
+.pricing-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.85rem;
+  color: var(--accent-gold);
+}
+
+@media (max-width: 900px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
